@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'News Message'
+type: news_message
+description: 'Use <em>news message</em> to post a news message to your community.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

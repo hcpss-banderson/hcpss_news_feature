@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news_message.body
+    - field.field.node.news_message.field_associated_program
+    - field.field.node.news_message.field_category
+    - node.type.news_message
+  module:
+    - text
+    - user
+id: node.news_message.teaser
+targetEntityType: node
+bundle: news_message
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_associated_program: true
+  field_category: true

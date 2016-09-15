@@ -1,0 +1,15 @@
+name: 'News Feature'
+description: 'News messages and taxonomy.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - inline_entity_form
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+version: 8.x-1.0
+package: HCPSS

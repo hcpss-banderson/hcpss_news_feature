@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.highlight
+    - field.field.node.news_message.body
+    - field.field.node.news_message.field_associated_program
+    - field.field.node.news_message.field_category
+    - node.type.news_message
+  module:
+    - text
+    - user
+id: node.news_message.highlight
+targetEntityType: node
+bundle: news_message
+mode: highlight
+content:
+  body:
+    label: hidden
+    type: text_trimmed
+    weight: 0
+    settings:
+      trim_length: 100
+    third_party_settings: {  }
+hidden:
+  field_associated_program: true
+  field_category: true
+  links: true
